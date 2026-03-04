@@ -20,7 +20,7 @@ app.post('/api/chat', async (req, res) => {
       },
       body: JSON.stringify({
         model: 'openrouter/auto',
-        plugins: [{ id: 'web', max_results: 3 }],
+        
         messages: [
           { role: 'system', content: system },
           ...messages
