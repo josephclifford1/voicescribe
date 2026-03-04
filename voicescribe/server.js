@@ -74,7 +74,7 @@ app.post('/api/chat', async (req, res) => {
     if (needsWebSearch(userQuestion)) {
       console.log('Searching web for:', userQuestion);
       webContext = await searchWeb(userQuestion);
-      console.log('Web results:', webContext ? 'Found' : 'None');
+      console.log('Web results:', webContext ? 'Found - ' + webContext.slice(0, 200) : 'None');
     }
 
     // Build enhanced system prompt with web results
