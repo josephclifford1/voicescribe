@@ -5,6 +5,7 @@ const cors = require('cors');
 const app = express();
 app.use(cors());
 app.use(express.json());
+console.log('KEY:', process.env.OPENROUTER_API_KEY ? 'Found - ' + process.env.OPENROUTER_API_KEY.slice(0,15) : 'MISSING');
 
 app.post('/api/chat', async (req, res) => {
   try {
