@@ -331,7 +331,7 @@ export default function VoiceScribeAI() {
               border: "1px solid rgba(124,106,255,0.3)",
               color: "var(--accent)", padding: "4px 12px", borderRadius: 100,
               fontSize: 10, fontFamily: "'DM Mono',monospace", letterSpacing: 1, textTransform: "uppercase",
-            }}>Powered by Claude</div>
+            }}>Powered by Nas</div>
           </div>
 
           {!supported && (
