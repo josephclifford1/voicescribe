@@ -15,7 +15,7 @@ app.post('/api/chat', async (req, res) => {
       headers: {
         'Content-Type': 'application/json',
         'Authorization': 'Bearer ' + process.env.OPENROUTER_API_KEY,
-        'HTTP-Referer': 'http://localhost:3000',
+        'HTTP-Referer': 'https://voicescribe-two.vercel.app',
         'X-Title': 'VoiceScribe AI'
       },
       body: JSON.stringify({
