@@ -29,9 +29,7 @@ app.post('/api/chat', async (req, res) => {
     });
 
     const data = await response.json();
-    console.log('OpenRouter response status:', data.choices ? 'OK' : 'ERROR');
-    if (data.error) console.error('Error:', data.error.message);
-
+    console.log('Full response:', JSON.stringify(data));
     const text = data.choices && data.choices[0] && data.choices[0].message.content || 'No response';
     res.json({ content: [{ text: text }] });
 
